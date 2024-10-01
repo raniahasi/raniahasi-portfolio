@@ -805,3 +805,75 @@ li:nth-child(4) {
     font-weight: 500;
     background-color: #e5a4ce;
 }
+
+
+/* Base styles for all devices */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.project-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+    width: 100%; /* Full width on small devices */
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #ea92bf;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .project-card {
+        width: 48%; /* Two cards per row */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .project-card {
+        width: 30%; /* Three cards per row */
+    }
+}
+
+
+
+/* Small Devices (Phones) */
+@media (max-width: 767px) {
+    .projects-container {
+        flex-direction: column;  /* Stacks project cards vertically */
+    }
+
+    .project-card {
+        width: 100%; /* Each card takes full width of the viewport */
+        margin: 10px 0; /* Adds vertical spacing between cards, removes horizontal margin */
+    }
+
+    .project-card img {
+        height: auto; /* Maintains aspect ratio of images */
+    }
+
+    .project-button {
+        position: static; /* Removes absolute positioning for better flow */
+        margin-top: 20px; /* Adds space above the button */
+        width: auto; /* Button width adjusts to content */
+        left: auto; /* Resets any previously set values */
+        transform: none; /* Disables horizontal centering transformation */
+    }
+}
