@@ -730,3 +730,78 @@ margin-left: 150px;
 .project-button:hover {
     background-color: #0056b3;
 }
+
+
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%; /* Adjust based on your preference */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    height: 500px; /* Fixed height */
+}
+
+.project-card img {
+    width: 100%; /* Makes image full width of the card */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures image covers the area properly */
+}
+
+.project-button {
+    position: absolute;
+    bottom: 10px; /* Aligns button to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #ea92bf;
+    border: none;
+    border-radius: 5px;
+}
+li:nth-child(2) {
+    background-color: #f8f8f8;
+    animation-delay: 0.1s;
+}
+
+li:nth-child(1) {
+    background-color: #f8f8f8;
+    animation-delay: 0s;
+}
+
+
+li:nth-child(5) {
+    background-color: #f8f8f8;
+    animation-delay: 0.4s;
+}
+
+li:nth-child(3) {
+    background-color: #f8f8f8;
+    animation-delay: 0.2s;
+}
+
+.skills {
+    font-size: medium;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+li:nth-child(4) {
+    background-color: #f8f8f8;
+    animation-delay: 0.3s;
+}
+
+
+.projectfont {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #e5a4ce;
+}
